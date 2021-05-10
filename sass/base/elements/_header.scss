@@ -1,0 +1,93 @@
+// My Custom Header
+.site .site-header {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: flex-start;
+   height: 225px;
+   background: white;
+   p,
+   a,
+   li {
+      color: black;
+   }
+   @media screen and (min-width: 50em) {
+      flex-direction: row;
+      justify-content: space-around;
+   }
+
+   // Site Branding
+   .site-branding {
+      width: 100%;
+      max-width: 400px;
+   }
+
+   nav.main-navigation {
+      // Button
+      button.menu-toggle {
+         @media screen and (min-width: 50em) {
+            display: none;
+         }
+         &:hover {
+            cursor: pointer;
+         }
+      }
+      .menu {
+         position: fixed;
+         top: 225px;
+         left: 0px;
+         z-index: 0;
+         width: 100%;
+         height: 100vh;
+         display: none;
+         @media screen and (min-width: 50em) {
+            width: 400px;
+            height: auto;
+
+            position: static;
+            height: auto;
+            display: block !important;
+         }
+
+         .nav-menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            width: inherit;
+            padding: 0px;
+            margin: 0px;
+            background: white;
+            height: 100vh;
+
+            a,
+            li {
+               list-style-type: none;
+               text-decoration: none;
+               text-transform: lowercase;
+            }
+            li {
+               padding: 15px 0px;
+            }
+            @media screen and (min-width: 50em) {
+               flex-direction: row;
+               justify-content: space-around;
+               height: auto;
+            }
+         }
+      }
+   }
+}
+
+// Toggle States
+.menu-on {
+   @media screen and (max-width: 50em) {
+      display: block !important;
+   }
+}
+
+.menu-off {
+   @media screen and (max-width: 50em) {
+      display: none !important;
+   }
+}

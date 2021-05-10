@@ -148,6 +148,9 @@ function yaeger_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+	// Google Fonts 
+	wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&family=Raleway:wght@300&display=swap', 'false' );
 }
 add_action( 'wp_enqueue_scripts', 'yaeger_scripts' );
 

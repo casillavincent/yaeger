@@ -3,3 +3,18 @@
 @import "variables/structure";
 @import "variables/columns";
 @import "mixins/mixins";
+
+// My Abstracts
+$text_content_padding_mobile: 50px 35px;
+@mixin center-items--col {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+@mixin center-items--row {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+}
