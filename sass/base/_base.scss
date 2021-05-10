@@ -10,6 +10,8 @@
 @import "elements/media";
 @import "elements/tables";
 @import "elements/header";
+@import "elements/footer";
+
 /* Links
 --------------------------------------------- */
 @import "elements/links";
@@ -18,3 +20,9 @@
 --------------------------------------------- */
 @import "elements/buttons";
 @import "elements/fields";
+
+html,
+body {
+   padding: 0px !important;
+   margin: 0px !important;
+}

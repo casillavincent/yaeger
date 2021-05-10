@@ -1,0 +1,111 @@
+.about-me {
+   header.entry-header {
+      max-width: 1250px;
+      margin: auto;
+      h1 {
+         font-size: 1.25em;
+         text-align: center;
+         @media screen and (min-width: 50em) {
+            text-align: left;
+         }
+      }
+   }
+}
+article.about-me-container {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   @media screen and (min-width: 50em) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      max-width: 1250px;
+      margin: auto;
+   }
+   img {
+      width: 100%;
+      max-width: 375px;
+      filter: grayscale(80%) contrast(1.1);
+      @media screen and (min-width: 50em) {
+         max-width: 500px;
+      }
+   }
+
+   section.about-me-content {
+      padding: $text_content_padding_mobile;
+      @media screen and (min-width: 50em) {
+         width: 100%;
+         height: 100%;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+      }
+   }
+}
+
+article.about-contact-form {
+   display: flex;
+   flex-direction: column-reverse;
+   width: 100%;
+   max-width: 1250px;
+   margin: auto;
+   @media screen and (min-width: 50em) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: end;
+   }
+   img {
+      height: 25vh;
+      object-fit: cover;
+      width: 100%;
+      max-width: none;
+      filter: grayscale(80%) contrast(1.1);
+
+      @media screen and (min-width: 25em) {
+         height: 40vh;
+      }
+      @media screen and (min-width: 50em) {
+         height: 100%;
+         max-height: 625px;
+         max-width: 500px;
+      }
+   }
+   .form {
+      width: 100%;
+      h3 {
+         text-align: center;
+         font-size: 1.5em;
+         margin: 0px;
+         padding: 35px 0px 0px 0px;
+         @media screen and (min-width: 50em) {
+            padding: 35px 35px 0px 35px;
+            text-align: left;
+            font-size: 2em;
+            margin: 0px;
+         }
+      }
+
+      .wpforms-container {
+         padding: 35px;
+         width: 100%;
+         @media screen and (min-width: 50em) {
+            form {
+               width: 100%;
+               input {
+                  width: 100%;
+               }
+
+               button.wpforms-submit {
+                  border: 1px solid black;
+                  background: transparent;
+                  transition: all 0.3s ease-out;
+                  &:hover {
+                     background: black;
+                     color: white;
+                  }
+               }
+            }
+         }
+      }
+   }
+}

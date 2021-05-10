@@ -6,4 +6,11 @@ h5,
 h6 {
    clear: both;
    font-family: $my_font_01;
+   margin: 0px;
+   padding: 0px;
+   text-transform: lowercase;
+   font-size: 1.75em;
+   @media screen and (min-width: 50em) {
+      font-size: 2em;
+   }
 }

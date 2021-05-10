@@ -12,6 +12,12 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
+		<div class="socials">
+			<a href="#0">Instagram</a>
+			<a href="#0">Facebook</a>
+			<a href="#0">Twitter</a>
+		</div>
+		<p>&#169; Mercedes Lee Photography</p>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

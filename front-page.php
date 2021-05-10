@@ -69,9 +69,7 @@ get_header();
 							$link = $row['link']; 
 							?>
 							<section class="category-item">
-								<a href="<?php echo $link; ?>">
-									<?php echo wp_get_attachment_image( $image, 'full' ); ?>
-								</a>
+								<?php echo wp_get_attachment_image( $image, 'full' ); ?>
 								<p> <?php echo $title; ?></p>
 							</section>
 						<?php endforeach;
@@ -79,6 +77,14 @@ get_header();
 				endif;
 			?>
 		</article>
+
+		<!-- CTA to Collection -->
+		<div class="work-cta">
+			<a href="<?php echo get_permalink( get_page_by_path( 'work' ) ); ?>" >
+			view portfolio
+			</a>
+		</div>
+		
 
 		<!-- Basic Contact -->
 		<article class="contact-home">

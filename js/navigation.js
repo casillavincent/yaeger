@@ -7,6 +7,7 @@
 (function () {
    const siteNavigation = document.getElementById("site-navigation");
    const toggledMenu = document.querySelector("div.menu");
+   const body = document.querySelector("body");
 
    // Return early if the navigation don't exist.
    if (!siteNavigation) {
@@ -42,6 +43,8 @@
       } else {
          toggledMenu.classList.remove("menu-on");
          toggledMenu.classList.add("menu-off");
+         if (toggledMenu.classList.contains("menu-off")) {
+         }
       }
 
       if (button.getAttribute("aria-expanded") === "true") {
