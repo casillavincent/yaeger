@@ -20,7 +20,7 @@ Custom WordPress Theme.
 
 
 <h3 style="color: red;" markdown='1'> 2. Ideation - sketch wireframes, content plan, file structures </h3>
-<img width="1031" alt="Screen Shot 2021-05-10 at 11 50 09 PM" src="https://user-images.githubusercontent.com/73447863/117771121-9f6b3900-b1ea-11eb-80a8-787fe7ea99b2.png">
-<img width="1040" alt="Screen Shot 2021-05-10 at 11 49 51 PM" src="https://user-images.githubusercontent.com/73447863/117771140-a3975680-b1ea-11eb-9525-83ef246a4471.png">
+<img width="800" alt="Screen Shot 2021-05-10 at 11 50 09 PM" src="https://user-images.githubusercontent.com/73447863/117771121-9f6b3900-b1ea-11eb-80a8-787fe7ea99b2.png">
+<img width="800" alt="Screen Shot 2021-05-10 at 11 49 51 PM" src="https://user-images.githubusercontent.com/73447863/117771140-a3975680-b1ea-11eb-9525-83ef246a4471.png">
 
 
