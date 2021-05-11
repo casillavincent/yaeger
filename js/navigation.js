@@ -47,12 +47,24 @@
          }
       }
 
+      if (toggledMenu.classList.contains("menu-on")) {
+         body.setAttribute("style", "overflow-y: hidden;");
+      } else {
+         body.removeAttribute("style");
+      }
+
       if (button.getAttribute("aria-expanded") === "true") {
          button.setAttribute("aria-expanded", "false");
       } else {
          button.setAttribute("aria-expanded", "true");
       }
    });
+
+   window.onload = () => {
+      if (!toggledMenu.classList.contains("menu-off")) {
+         toggledMenu.classList.add("menu-off");
+      }
+   };
 
    // Remove the .toggled class and set aria-expanded to false when the user clicks outside the navigation.
    document.addEventListener("click", function (event) {

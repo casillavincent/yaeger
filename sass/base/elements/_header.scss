@@ -3,13 +3,19 @@
    display: flex;
    flex-direction: column;
    align-items: center;
-   justify-content: flex-start;
+   justify-content: center;
    height: 225px;
    background: white;
    p,
    a,
    li {
       color: black;
+   }
+   @media screen and (min-width: 25em) {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      padding: 25px;
    }
    @media screen and (min-width: 50em) {
       flex-direction: row;
@@ -20,11 +26,24 @@
    .site-branding {
       width: 100%;
       max-width: 400px;
+      padding: 0px;
+      margin: 0px;
    }
 
    nav.main-navigation {
       // Button
       button.menu-toggle {
+         font-size: 1em;
+         background: none;
+         text-transform: lowercase;
+         padding: 10px 20px;
+         border-radius: 0;
+         border: 1px solid black;
+         position: relative;
+         top: -15px;
+         @media screen and (min-width: 25em) {
+            position: static;
+         }
          @media screen and (min-width: 50em) {
             display: none;
          }
@@ -42,7 +61,6 @@
          @media screen and (min-width: 50em) {
             width: 400px;
             height: auto;
-
             position: static;
             height: auto;
             display: block !important;
@@ -72,8 +90,9 @@
             }
             @media screen and (min-width: 50em) {
                flex-direction: row-reverse;
-               justify-content: space-around;
+               justify-content: space-between;
                height: auto;
+               width: 75%;
             }
          }
       }
@@ -84,11 +103,32 @@
 .menu-on {
    @media screen and (max-width: 50em) {
       display: block !important;
+      animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+      @keyframes slide-in-bottom {
+         0% {
+            transform: translateY(1000px);
+            opacity: 0;
+         }
+         100% {
+            transform: translateY(0);
+            opacity: 1;
+         }
+      }
    }
 }
 
 .menu-off {
    @media screen and (max-width: 50em) {
-      display: none !important;
+      animation: slide-out-bottom 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+      @keyframes slide-out-bottom {
+         0% {
+            transform: translateY(0);
+            opacity: 1;
+         }
+         100% {
+            transform: translateY(1000px);
+            opacity: 0;
+         }
+      }
    }
 }

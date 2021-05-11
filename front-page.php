@@ -14,7 +14,7 @@
 
 get_header();
 ?>
-	<main id="primary" class="site-main"
+	<main id="primary" class="site-main">
 		<?php
 		if ( have_posts() ) :
 
@@ -53,7 +53,7 @@ get_header();
 
 
 		<article class="about-excerpt">
-			<h2>i capture the essence of self, human nature and time. </h2>
+			<h2>photos that capture the beauty of human nature and time.</h2>
 			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat laborum totam voluptatum accusantium necessitatibus suscipit maxime.</p>
 		</article>
 
@@ -88,7 +88,7 @@ get_header();
 
 		<!-- Basic Contact -->
 		<article class="contact-home">
-			<p>want to collab or have any questions? lets chat.</p>
+			<p>have questions? let's chat.</p>
 			<form action="">
 				<input type="text" name="email" id="email" class="email-field" placeholder="Email">
 				<input type="submit" name="submit" id="submit" class="submit" value="Submit">

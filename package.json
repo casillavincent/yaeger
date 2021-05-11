@@ -45,6 +45,8 @@
    },
    "main": "index.js",
    "dependencies": {
-      "sass": "^1.32.12"
+      "aos": "^3.0.0-beta.6",
+      "sass": "^1.32.12",
+      "smooth-scrollbar": "^8.6.2"
    }
 }

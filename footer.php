@@ -12,6 +12,9 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
+	<aside class='back-to-top'>
+	<button class='back-to-top-btn'>⭡</button>
+	</aside>
 		<div class="socials">
 			<a href="#0">Instagram</a>
 			<a href="#0">Facebook</a>

@@ -423,6 +423,11 @@ body {
   background: #fff;
   font-family: "Frank Ruhl Libre", serif;
 }
+@media screen and (min-width: 50em) {
+  body {
+    overflow-y: visible !important;
+  }
+}
 
 hr {
   background-color: #ccc;
@@ -483,7 +488,7 @@ table {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   height: 225px;
   background: white;
 }
@@ -491,6 +496,14 @@ table {
 .site .site-header a,
 .site .site-header li {
   color: black;
+}
+@media screen and (min-width: 25em) {
+  .site .site-header {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px;
+  }
 }
 @media screen and (min-width: 50em) {
   .site .site-header {
@@ -501,6 +514,23 @@ table {
 .site .site-header .site-branding {
   width: 100%;
   max-width: 400px;
+  padding: 0px;
+  margin: 0px;
+}
+.site .site-header nav.main-navigation button.menu-toggle {
+  font-size: 1em;
+  background: none;
+  text-transform: lowercase;
+  padding: 10px 20px;
+  border-radius: 0;
+  border: 1px solid black;
+  position: relative;
+  top: -15px;
+}
+@media screen and (min-width: 25em) {
+  .site .site-header nav.main-navigation button.menu-toggle {
+    position: static;
+  }
 }
 @media screen and (min-width: 50em) {
   .site .site-header nav.main-navigation button.menu-toggle {
@@ -553,20 +583,42 @@ table {
 @media screen and (min-width: 50em) {
   .site .site-header nav.main-navigation .menu .nav-menu {
     flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: space-between;
     height: auto;
+    width: 75%;
   }
 }
 
 @media screen and (max-width: 50em) {
   .menu-on {
     display: block !important;
+    animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+  @keyframes slide-in-bottom {
+    0% {
+      transform: translateY(1000px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
 }
 
 @media screen and (max-width: 50em) {
   .menu-off {
-    display: none !important;
+    animation: slide-out-bottom 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  }
+  @keyframes slide-out-bottom {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(1000px);
+      opacity: 0;
+    }
   }
 }
 
@@ -608,6 +660,26 @@ footer.site-footer p {
   footer.site-footer p {
     font-size: 0.9em;
   }
+}
+
+aside.back-to-top {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+aside.back-to-top button {
+  background: none;
+  border-style: none;
+  width: 50px;
+  height: 50px;
+  font-size: 1.25em;
+  color: rgba(0, 0, 0, 0.75);
+  transition: all 0.3s ease-out;
+  z-index: 1;
+}
+aside.back-to-top button:hover {
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.75);
 }
 
 /* Links
@@ -710,6 +782,10 @@ html,
 body {
   padding: 0px !important;
   margin: 0px !important;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /*--------------------------------------------------------------
@@ -1013,7 +1089,7 @@ article.category-items .category-item img {
   height: 30vh;
   object-fit: cover;
   filter: contrast(1.25) grayscale(85%);
-  margin-bottom: -75px;
+  margin-bottom: -110px;
 }
 @media screen and (min-width: 25em) {
   article.category-items .category-item img {
@@ -1030,10 +1106,10 @@ article.category-items .category-item img {
 article.category-items .category-item p {
   text-align: center;
   position: relative;
-  top: -90px;
+  top: -60px;
   color: white;
   text-transform: lowercase;
-  font-size: 1.75em;
+  font-size: 1.5em;
 }
 article.category-items .category-item p::after {
   content: ".";
@@ -1071,6 +1147,7 @@ article.about-excerpt {
 @media screen and (min-width: 50em) {
   .work-cta {
     height: 15vh;
+    min-height: 200px;
   }
 }
 .work-cta a {
@@ -1171,7 +1248,9 @@ article.contact-home form input.submit:hover {
 }
 .site-main .post-16 header.entry-header h1 {
   font-size: 2.5em;
-  font-family: "Raleway", sans-serif;
+}
+.site-main .post-16 header.entry-header h1::after {
+  content: ".";
 }
 @media screen and (min-width: 50em) {
   .site-main .post-16 header.entry-header h1 {
@@ -1192,6 +1271,13 @@ article.contact-home form input.submit:hover {
 @media screen and (min-width: 50em) {
   .about-me header.entry-header h1 {
     text-align: left;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+}
+@media screen and (min-width: 75em) {
+  .about-me header.entry-header h1 {
+    margin: 0px 0px 10px 0px;
   }
 }
 

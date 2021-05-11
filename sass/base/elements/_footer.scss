@@ -32,3 +32,23 @@ footer.site-footer {
       }
    }
 }
+
+aside.back-to-top {
+   position: fixed;
+   bottom: 10px;
+   right: 10px;
+   button {
+      background: none;
+      border-style: none;
+      width: 50px;
+      height: 50px;
+      font-size: 1.25em;
+      color: rgba(black, 0.75);
+      transition: all 0.3s ease-out;
+      z-index: 1;
+      &:hover {
+         cursor: pointer;
+         border: 1px solid rgba(black, 0.75);
+      }
+   }
+}
