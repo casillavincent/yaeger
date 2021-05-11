@@ -1,4 +1,7 @@
 .about-me {
+   @media screen and (min-width: 50em) {
+      margin-top: 25px;
+   }
    header.entry-header {
       max-width: 1250px;
       margin: auto;

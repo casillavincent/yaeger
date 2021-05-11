@@ -20,6 +20,8 @@
    @media screen and (min-width: 50em) {
       flex-direction: row;
       justify-content: space-around;
+      height: 15vh;
+      min-height: 100px;
    }
 
    // Site Branding

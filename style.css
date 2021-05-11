@@ -509,6 +509,8 @@ table {
   .site .site-header {
     flex-direction: row;
     justify-content: space-around;
+    height: 15vh;
+    min-height: 100px;
   }
 }
 .site .site-header .site-branding {
@@ -1019,6 +1021,12 @@ html {
 article.splash-container {
   width: 100%;
 }
+@media screen and (min-width: 50em) {
+  article.splash-container {
+    height: 85vh;
+    min-height: 85vh;
+  }
+}
 @media screen and (min-width: 60em) {
   article.splash-container {
     display: grid;
@@ -1042,9 +1050,8 @@ article.splash-container section.splash-container__banner img {
 }
 @media screen and (min-width: 50em) {
   article.splash-container section.splash-container__banner img {
-    height: 100vh;
+    height: 85vh;
     width: 100%;
-    min-height: 750px;
     padding: 0px;
   }
 }
@@ -1171,7 +1178,8 @@ article.about-excerpt {
 article.contact-home {
   width: 100%;
   height: 40vh;
-  min-height: 400px;
+  min-height: 300px;
+  background: #f7f7f7;
   padding: 50px 35px;
   display: flex;
   flex-direction: column;
@@ -1260,6 +1268,11 @@ article.contact-home form input.submit:hover {
   }
 }
 
+@media screen and (min-width: 50em) {
+  .about-me {
+    margin-top: 25px;
+  }
+}
 .about-me header.entry-header {
   max-width: 1250px;
   margin: auto;

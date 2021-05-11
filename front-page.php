@@ -53,7 +53,7 @@ get_header();
 
 
 		<article class="about-excerpt">
-			<h2>photos that capture the beauty of human nature and time.</h2>
+			<h2>photos that capture the beauty of human nature.</h2>
 			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat laborum totam voluptatum accusantium necessitatibus suscipit maxime.</p>
 		</article>
 
