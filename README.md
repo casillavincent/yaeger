@@ -1,2 +1,3 @@
-# yaeger
- WordPress Starter
+# Yaeger 
+Custom WordPress Theme.
+
