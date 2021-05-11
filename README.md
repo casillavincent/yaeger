@@ -4,7 +4,7 @@ Custom WordPress Theme.
 
 
 ## Design + Development Process
-<h3 style="color: red;" markdown='1'> 1. Get inspirations. </h3>
+<h3 style="color: red;" markdown='1'> Get inspirations. </h3>
 <img src="https://user-images.githubusercontent.com/73447863/117770010-464ed580-b1e9-11eb-9431-01cb40795d00.png" width="700" markdown="1" />
 <img src="https://user-images.githubusercontent.com/73447863/117770049-4ea71080-b1e9-11eb-9b8a-26df3bfa1b07.png" width="500" markdown="1" />
 <img src="https://user-images.githubusercontent.com/73447863/117770050-4f3fa700-b1e9-11eb-84d5-d6e34751cd5d.png" width="500" markdown="1" />
@@ -19,8 +19,10 @@ Custom WordPress Theme.
 
 
 
-<h3 style="color: red;" markdown='1'> 2. Sketch wireframes, content structure, site map. </h3>
+<h3 style="color: red;" markdown='1'> Sketch wireframes, content structure, site map. </h3>
 <img width="800" alt="Screen Shot 2021-05-10 at 11 50 09 PM" src="https://user-images.githubusercontent.com/73447863/117771121-9f6b3900-b1ea-11eb-80a8-787fe7ea99b2.png">
 <img width="800" alt="Screen Shot 2021-05-10 at 11 49 51 PM" src="https://user-images.githubusercontent.com/73447863/117771140-a3975680-b1ea-11eb-9525-83ef246a4471.png">
+
+
 
 
