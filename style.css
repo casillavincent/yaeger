@@ -489,7 +489,7 @@ table {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 225px;
+  height: 160px;
   background: white;
 }
 .site .site-header p,
@@ -514,10 +514,11 @@ table {
   }
 }
 .site .site-header .site-branding {
-  width: 100%;
-  max-width: 400px;
+  width: 75%;
+  margin: 0px 0px 5px 0px;
+  max-width: 275px;
+  height: auto;
   padding: 0px;
-  margin: 0px;
 }
 .site .site-header nav.main-navigation button.menu-toggle {
   font-size: 1em;
@@ -544,7 +545,7 @@ table {
 }
 .site .site-header nav.main-navigation .menu {
   position: fixed;
-  top: 225px;
+  top: 160px;
   left: 0px;
   z-index: 999;
   width: 100%;
@@ -572,6 +573,15 @@ table {
 }
 .site .site-header nav.main-navigation .menu .nav-menu a {
   font-size: 1.25em;
+  transition: all 0.25s ease-out;
+}
+@media screen and (min-width: 50em) {
+  .site .site-header nav.main-navigation .menu .nav-menu a {
+    opacity: 0.3;
+  }
+  .site .site-header nav.main-navigation .menu .nav-menu a:hover {
+    opacity: 1;
+  }
 }
 .site .site-header nav.main-navigation .menu .nav-menu a,
 .site .site-header nav.main-navigation .menu .nav-menu li {
@@ -1130,6 +1140,19 @@ article.category-items .category-item p::after {
 
 article.about-excerpt {
   padding: 50px 35px;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+article.about-excerpt h2 {
+  font-size: 1.5em;
+}
+@media screen and (min-width: 50em) {
+  article.about-excerpt h2 {
+    font-size: 2em;
+  }
 }
 @media screen and (min-width: 50em) {
   article.about-excerpt {

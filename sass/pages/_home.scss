@@ -105,6 +105,17 @@ article.category-items .category-item {
 
 article.about-excerpt {
    padding: $text_content_padding_mobile;
+   height: 75vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   h2 {
+      font-size: 1.5em;
+      @media screen and (min-width: 50em) {
+         font-size: 2em;
+      }
+   }
    @media screen and (min-width: 50em) {
       text-align: center;
       height: 75vh;
