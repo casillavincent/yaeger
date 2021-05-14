@@ -422,6 +422,7 @@ h6 {
 body {
   background: #fff;
   font-family: "Frank Ruhl Libre", serif;
+  overflow-x: hidden;
 }
 @media screen and (min-width: 50em) {
   body {
@@ -484,6 +485,11 @@ table {
   width: 100%;
 }
 
+/* 
+--------------------------------------
+            HEADER
+--------------------------------------
+*/
 .site .site-header {
   display: flex;
   flex-direction: column;
@@ -601,6 +607,11 @@ table {
   }
 }
 
+/* 
+--------------------------------------
+            Toggle States
+--------------------------------------
+*/
 @media screen and (max-width: 50em) {
   .menu-on {
     display: block !important;
@@ -798,6 +809,11 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+@media screen and (max-width: 50em) {
+  html {
+    overflow-x: hidden;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1030,43 +1046,48 @@ html {
 */
 article.splash-container {
   width: 100%;
-}
-@media screen and (min-width: 50em) {
-  article.splash-container {
-    height: 85vh;
-    min-height: 85vh;
-  }
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 @media screen and (min-width: 60em) {
   article.splash-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: -10px;
   }
 }
 article.splash-container section.splash-container__banner {
   width: 100%;
+  height: 300px;
+}
+@media screen and (min-width: 25em) {
+  article.splash-container section.splash-container__banner {
+    height: 425px;
+  }
+}
+@media screen and (min-width: 60em) {
+  article.splash-container section.splash-container__banner {
+    height: 85vh;
+    min-height: 600px;
+  }
 }
 article.splash-container section.splash-container__banner img {
   width: 100%;
-  height: 300px;
+  height: inherit;
   object-fit: cover;
   filter: grayscale(100%) contrast(1.25);
 }
-@media screen and (min-width: 25em) {
+@media screen and (min-width: 60em) {
   article.splash-container section.splash-container__banner img {
-    height: 500px;
-  }
-}
-@media screen and (min-width: 50em) {
-  article.splash-container section.splash-container__banner img {
-    height: 85vh;
-    width: 100%;
-    padding: 0px;
+    min-height: 600px;
   }
 }
 article.splash-container section.text-content {
   padding: 50px 35px;
+  max-width: 600px;
+  margin: auto;
 }
 article.splash-container section.text-content h1 {
   text-transform: lowercase;
@@ -1083,11 +1104,17 @@ article.splash-container section.text-content h1 {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    padding: 125px 0px;
   }
 }
 @media screen and (min-width: 60em) {
   article.splash-container section.text-content {
     padding: 0% 20%;
+    height: 100%;
+    max-height: 85vh;
+    max-width: none;
+    width: 100%;
+    min-height: 500px;
   }
 }
 
@@ -1145,6 +1172,8 @@ article.about-excerpt {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 600px;
+  margin: auto;
 }
 article.about-excerpt h2 {
   font-size: 1.5em;
@@ -1157,12 +1186,18 @@ article.about-excerpt h2 {
 @media screen and (min-width: 50em) {
   article.about-excerpt {
     text-align: center;
-    height: 75vh;
-    min-height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-height: 600px;
+  }
+}
+@media screen and (min-width: 60em) {
+  article.about-excerpt {
+    max-width: none;
+    margin: 0px;
+    padding: 0px 75px;
   }
 }
 

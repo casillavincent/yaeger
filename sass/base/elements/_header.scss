@@ -1,4 +1,8 @@
-// My Custom Header
+/* 
+--------------------------------------
+            HEADER
+--------------------------------------
+*/
 .site .site-header {
    display: flex;
    flex-direction: column;
@@ -109,7 +113,11 @@
    }
 }
 
-// Toggle States
+/* 
+--------------------------------------
+            Toggle States
+--------------------------------------
+*/
 .menu-on {
    @media screen and (max-width: 50em) {
       display: block !important;
